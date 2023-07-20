@@ -36,19 +36,17 @@ body {
     padding: .5rem;
 
     transition: 3s all;
-
-    /*Las transiciones van sobre el elemento. Estado inicial. Osea el ".elemento"*/
-    transition-property: color, background-color, transform, border-radius; /*Le indica a transition que quiero estar pendiente de todas las propiedades. No todas las propiedades son animables*/
-    transition-duration: 3s, 5s, 4s, 1s;
-    color: red;
-    border-radius: initial;
-    transition-timing-function: linear; /*linear, ease, ease-in,ease-out, ease-in-out*/
+    /*!TRANSFORM: transform-origin*/
+    /* transform: translateX(100%); */
+    transform: rotate(0turn);
+    transform-origin: top right;
+    transform-origin: 100% 100%;
+    transform-origin: center center;
+    transform-origin: 5rem 5rem;
+    transform-origin: bottom right;
 }
 
 
 .contenedor:hover .elemento {
-    color: black;
-    background-color: aqua;
-    transform: translateX(100%) rotate(45deg);
-    border-radius: 15%;
+    transform: rotate(2turn);
 }
