@@ -1,0 +1,89 @@
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Ejemplo para $ */
+    background-color: #ddf;
+}
+
+.background {
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: crimson;
+    width: 1000px;
+    height: 800px;
+}
+
+.background-1 {
+    background-color: green;
+    background-image: url('../img/paisaje.jpg');
+    /* background-repeat: repeat; DEFAULT: repeat */
+    /* background-repeat: repeat-x; REPITE: horizontalmente
+    background-repeat: repeat-y; REPITE: verticalmente*/
+    background-repeat: no-repeat;
+}
+
+.background-2 {
+    background-color: blue;
+    background-image: url('../img/chocolate.jpg'), url('../img/celular.jpg'), url('../img/paisaje.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, top left,  bottom right, center;
+    background-size: 800px auto, 600px auto, 600px auto; /*withd height,*/
+}
+
+.background-3 {
+    background-image: url('../img/candies.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; /*Va a ajustar PROPORCIONALMENTE hasta que la imagene entre en el CONTENEDOR*/
+    background-size: cover;  /*Va a agrandar PROPORCIONALMENTE hasta que cubra TODO EL FONDO del CONTENEDOR*/
+    background-position: center;
+}
+
+.background-4 {
+    background-color: violet;
+    /* background-image: linear-gradient(to right/left/top/bottom, red, blue, green); */
+    background-image: linear-gradient(45deg, red, blue, green);
+}
+
+.background-5 {
+    background-color: violet;
+    /* background-image: linear-gradient(to right/left/top/bottom, red, blue, green); */
+    background-image: 
+        linear-gradient(
+            45deg, 
+            rgba(255,0,0,0.3),
+            rgba(0,0,255,0.3),
+            rgba(0,255,0,0.3)), /*to left/right/bottom/top 10 deg, 20deg, ... 360deg*/
+            url("../img/paisaje.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.background-6 {
+    background-color: violet;
+    /* background-image: linear-gradient(to right/left/top/bottom, red, blue, green); */
+    background-image: 
+        radial-gradient(
+            rgba(255,0,0,0.3),
+            rgba(0,0,255,0.3),
+            rgba(0,255,0,0.3)),
+            url("../img/paisaje.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.background-7 {
+    background-color: red;
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(255,0,0,0.3) 0%,   /*Los porcentajes son dond empieza, y el siguiente dice donde temrina*/
+            rgba(0,0,255,0.3) 32%,
+            rgba(0,255,0,0.3) 65%,
+            rgba(23, 123, 124, 0.2) 100%);
+}
+/* ERRRORRRRR BUCSARLO */

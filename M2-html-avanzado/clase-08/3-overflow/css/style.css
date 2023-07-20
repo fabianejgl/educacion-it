@@ -1,0 +1,66 @@
+/* ! SIENTO QUE FALTA ALGÚN WIDTHHHH EN ALGÚN LUGAR, DE SECTION CREO */
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #a4a4a4;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 1200px;
+    background-color: #d7d7d7;
+    padding: 2em;
+}
+
+h2 {
+    background-color: steelblue;
+    width: 800px;
+}
+
+section {
+    border: 1px solid #333;
+    background-color: mediumturquoise;
+    margin: 3em 0;
+    padding: 1em;
+    height: 300px;
+}
+
+#section1 {
+    /* Propiedad Overflow */
+    overflow: visible; /*valor por defecto*/
+    overflow: hidden;
+}
+
+#section2 {
+    overflow: scroll;
+}
+
+#section3 {
+    overflow: auto; /*Si no es necesario el scroll, lo borra*/
+}
+
+/*Más común*/
+#section4 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#section5 {
+    overflow-x: scroll;
+    overflow-y: hidden;    
+}
+
+#section6 h2{
+    width: 500px;    
+}
+#section6 {
+    overflow: auto;
+}

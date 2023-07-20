@@ -1,0 +1,47 @@
+/* !Rever últimos 20 mins clase, F internet */
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #a4a4a4;
+}
+
+.contenedor {
+    width: 75%;
+}
+
+.cuadrado {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(crimson, gold);
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+}
+
+.cuadrado:nth-child(1n+2) {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(violet, blueviolet);
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+}
+
+.cuadrado-right {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(violet, blueviolet);
+    border: 1px solid black;
+    float: right;
+    margin: 10px;
+}
+
+.parrafo {
+    clear:left;
+}

@@ -1,0 +1,28 @@
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imagen {
+    background-color: red;
+    width: 800px;
+    height: 300px;
+}
+
+.imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ACÁ no esuché mucho, ya es lo último */
+.decoracion {
+    background-color: red;
+    background-image: url("imagen1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Falta algo....*/
+}

@@ -1,0 +1,72 @@
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px; /*!root*/
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    background-color: steelblue;
+    height: 30rem;          /*Relativa al ROOT, -> 30*20px = 600px*/
+    width: 90%;             /*Relativo a su etiqueta contenedora -> BODY*/
+    margin: 3rem auto;
+    outline: .1rem solid crimson;
+}
+
+.elemento {
+    background-color: chocolate;
+    width: 10rem;
+    height: 10rem;
+    color: #eee;
+    padding: .5rem;
+    /* margin: 5px 5px 5px 5px; */
+
+    transition: 3s all;
+    /*!TRANSFORM: TRASLATE*/
+    /* transform: translateX(100%); */
+    /* transform: translateY(100%); */
+
+    
+    /*px: mueve la cantidad de px
+    %: se mueve el porcentaje del elemento en X o Y
+    */
+    
+    /*!TRANSFORM: ROTATE */
+    /*grados [0-360] -> deg                 mas usado
+    radians [0-6.28] -> rad
+    gradians [0-400] -> grad
+    vueltas [0-1] (decimales) -> turn     mas usado
+    180deg -- 3.14 -- 200grad -- .5turn
+    */
+    
+    /*?Estados iniciales, puedo no ponerlos*/
+    /* transform: translate(100%, 100%); */
+    /* transform: rotate(0turn); */
+    /* transform: skew() */
+    transform: scaleX(100%);
+}
+
+
+
+/* .elemento:hover {
+    transform: rotate(45deg);
+    !funciona mal
+} */
+
+.contenedor:hover .elemento {
+    /*?Estados Finales*/
+
+    /* transform: rotate(3turn); */
+    /* transform: skew(30deg, 50deg); */
+    /* transform: scaleX(50%); */
+    /* transform: scaleY(30%); */
+    transform: scaleZ(20%);
+}

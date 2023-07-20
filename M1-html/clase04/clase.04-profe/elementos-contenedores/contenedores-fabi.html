@@ -1,0 +1,83 @@
+
+<!--Contendedores-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase04 - Elementos contenedores (etiquetas)</title>
+</head>
+<body>
+    <div>
+        <h1>Criptomonedas</h1>
+        <p>Página sobre las criptomonedas</p>
+    </div>
+    <div>
+        <h2>Lista de criptomonedas</h2>
+
+        <ul>
+            <li>Bitcoin</li>
+            <li>Eth</li>
+            <li>Litecoin</li>
+        </ul>
+
+    </div>
+
+    <!--Hoy con html5 etiquetas semanticas contenedoras-->
+    <!--header main section div? aside nav-->
+
+    <!--Puede haber un nav en un aside en un head en main...-->
+    <!--Creada para subdividir el contenido principal (MAIN)-->
+    <!--También puede usarse article para subdividir-->
+    <!--Dentro del section también puede subdividirse con sections o tener articles-->
+    <!--Article, diferencia es que el article podría sacarse y se entienda sin necesidad de un contexto mayor-->
+    <!--Article es independiente, section no tanto. Puedes ser un post de un producto o un servicio-->
+
+    <!--Aside, contenido secundario, puede ser publicidad, información lateral al contenido principal-->
+
+    <!--Footer, obligatorio: info de contacto, redes sociales, fecha de creación de página-->
+    <!--Address, dentro del footer, un apartado con la direccion de autor, pag de contacto,redes, etc-->
+
+    <!--Figure y figcaption, lleva adentro la imagen para poder ponerle un pie de foto
+        <figure>
+            <img>
+            <figcaption>
+        </figure>
+    -->
+    <header>
+        <h1>Criptomonedas</h1>
+        <p>Página sobre las criptomonedas</p>
+    </header>
+    <main>
+        <section>
+            <h2>Lista de criptomonedas</h2>
+            <ul>
+                <li>Bitcoin</li>
+                <li>Eth</li>
+                <li>Litecoin</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Otra sección</h2>
+
+            <article>
+                <h3>Tiulo post 1</h3>
+                <p>El contenido dle post</p>
+            </article>
+
+            <article>
+                <h3>Eltitulo del post 2</h3>
+                <figure>
+                    <img src="foto.jpg" alt="foto_random">
+                    <figcaption>Soy el pie de foto</figcaption>
+
+                
+                </figure>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
+

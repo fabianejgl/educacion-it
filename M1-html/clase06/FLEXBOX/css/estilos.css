@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #b71275;
+
+}
+
+/* La mayoría de las propiedades CSS van sobre el PADRE. */
+.contenedor-papa {
+    display: flex; /* un contenedor flex (FLEXIBLE) */
+    background-color: aqua;
+    height: 500px;
+    padding: 20px;
+
+    /* ! FLEX-DIRECTION */
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* ! FKEX-WRAP */
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap; */
+    /* Acomoda los elems con el espacio disponiblem si no entra se mueve para abajo. */
+
+    /* flex-wrap: wrap-reverse;*/
+    
+
+    /* !Me gestiona el eje principal */
+    /* * Si flex-direction es... */
+    /* Justify content */
+
+
+    justify-content: center;        /*Centro*/
+    /* justify-content: start;          al principio, izquierda (o arriba si flex-direction es column) */
+    /* justify-content: end;            al final, derecha (o abajo si flex-direction es column) */
+    /* justify-content: space-between;  ordena según espacio disponible */
+    /* justify-content: space-around;   distribuye hijos para que a los costados haya el doble de espacio que entre los hijos*/
+
+
+    /* ! ALIGN-ITEMS (Gestiona el eje secundario si tengo activo row)*/
+    /* Gestiona el eje principal si tengo activo COLUMN */
+    align-items: stretch;
+    /* 
+    "stretch": default- se estira el eje secundario (ocupando todo el contenedor)
+        start: Me posiciona los hijos en la parte superior del contenedor
+        end: Me posiciona los hijos en la aprte inferior del contenedor
+        center: Me posiciona los hijos en el centro del contenedor. Verticalmente.
+    */
+}
+
+
+/* Propiedades que se  aplican sobre los hijos */
+/* ORDER: Por defecto esta en ceor -> acepta valores negativos */
+/* Flex-grow: por defecto está en posición 0 */
+/* Flex-shrink: por defecto en posición 1 */
+/* Flex-basis: establece el tamaño inicial del elemento (hijo flex) | valor por defecto auto (width)*/
+
+
+.hijo {
+    background-color: #9861EB;
+    padding: 30px;
+    margin: 2px;
+    text-align: center;
+    color: white;   
+}
+
+.hijo1{
+    background-color: blue;
+    order: 10;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.hijo2{
+    background-color: red;
+    order: -10;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.hijo3{
+    background-color: purple;
+    order: 20;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.hijo4{
+    background-color: white;
+    order: 30;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.hijo5{
+    background-color: mediumaquamarine;
+    order: 40;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}

@@ -1,0 +1,54 @@
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px; /*!root*/
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    background-color: steelblue;
+    height: 30rem;          /*Relativa al ROOT, -> 30*20px = 600px*/
+    width: 90%;             /*Relativo a su etiqueta contenedora -> BODY*/
+    margin: 3rem auto;
+    outline: .1rem solid crimson;
+}
+
+.elemento {
+    background-color: chocolate;
+    width: 10rem;
+    height: 10rem;
+    color: #eee;
+    padding: .5rem;
+
+    transition: 3s all;
+
+    /*Las transiciones van sobre el elemento. Estado inicial. Osea el ".elemento"*/
+    transition-property: color, background-color, transform, border-radius; /*Le indica a transition que quiero estar pendiente de todas las propiedades. No todas las propiedades son animables*/
+    transition-duration: 3s, 5s, 4s, 1s;
+    color: red;
+    border-radius: initial;
+    transition-timing-function: linear; /*linear, ease, ease-in,ease-out, ease-in-out*/
+}
+
+
+.contenedor:hover .elemento {
+    color: black;
+    background-color: aqua;
+    transform: translateX(100%) rotate(45deg);
+    border-radius: 15%;
+}

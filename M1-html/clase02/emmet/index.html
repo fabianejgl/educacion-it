@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase - 02</title>
+</head>
+
+<body>
+    <h1>Emmet</h1>
+    <!-- CTRL + SPACE: RECUPERO SUGERENCIA DE EMMET -->
+    
+    <!-- HIJO -> (Child: >) -->
+    <!-- ul>li -->
+    <ul>
+        <li></li>
+    </ul>
+
+    <!-- Multiplicación -> (Multiplication: *) -->
+    <!-- ul>li*5 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- HERMANO -> (Sibling: +) -->
+    <!-- h1+p+h2+p+p  -->
+        <h1>TITULO</h1>
+        <p>ADS</p>
+        <h2>ASDF</h2>
+        <p>ASD</p>
+        <p>ASD</p>
+
+    <!-- Numeración -> (Item numbering: $) -->
+    <!-- tEXTO DENTRO DE ETIQUETA -> (Item numbering: $) -->
+    <!-- ul>li*5{Item $} -->
+    <!-- ul>li*5{Item $$}   Empieza desde la cantidad de $-->
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    ul>li*5{Item $$$}
+
+
+    <!-- h1{Ttitulo H1}+p{Parrafo del H1}+h2{Titulo H2} -->
+    <h1>Ttitulo H1</h1>
+    <p>Parrafo del H1</p>
+    <h2>Titulo H2</h2>
+
+
+    <!-- AGRUPACION: (Grouómg: ()) -->
+    <!-- ul>(li>p)*3 -->
+    <!-- ul>(li>p{parrafo})*3 -->
+    <ul>
+        <li>
+            <p>parrafo</p>
+        </li>
+        <li>
+            <p>parrafo</p>
+        </li>
+        <li>
+            <p>parrafo</p>
+        </li>
+    </ul>
+
+    <!-- ul>(li>(h2+p))*5 -->
+    <ul>
+        <li>
+            <h2></h2>
+            <p></p>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+        </li>
+        <li>
+            <h2></h2>
+            <p></p>
+        </li>
+    </ul>
+
+    <!-- SUBIR -> Climb-up:-->
+    <!-- (ul>li)+p ooooo sin Climbup: ul>li^p-->
+    <ul>
+        <li></li>
+    </ul>
+    <p></p>
+
+    <!-- h$*5 -->
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+
+
+    <!--
+        ul>ul*3>li*2+p  p queda como hermano de los li
+        ul>ul>li^p      saca a p del primer ul, 
+        ul>ul*3>li*2^^p saca a p de de ambos ul
+    -->
+    <ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <p></p>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <p></p>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <p></p>
+        </ul>
+    </ul>
+
+    <ul>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <p></p>
+    </ul>
+
+    <ul>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </ul>
+    <p></p>
+</body>
+</html>

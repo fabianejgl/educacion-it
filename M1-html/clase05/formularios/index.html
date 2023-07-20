@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <p>Para crear un fomrulario usamos la etiqueta "form> /form>"</p>
+
+    <h2>Atributos de la etiqueta form</h2>
+
+    <ul>
+        <li>Action: Es la ruta (url) a donde se va a enviar la información recopilada</li>
+        <li>Method: (protocolo http => metodos http) - Método GET y POST.<strong> SOLO A TRAVES DE ESTAS 2 FORMAS PUEDO ENVIAR LA INFORMACION. Es como se va a enviar la información. GET => Através de la URL o POST => A través del cuerpo de HTML </strong></li>
+        <li>Target: El mismo comportamiento que tenía en los links (anchor tags). Si le coloco target = "_blank" se abre en otra pestaña. Si le coloco target="_self" se abre en la misma pestaña.</li>
+    </ul>
+
+    <h2>Formulario al enviarse va a armar la URL (Query String)</h2>
+
+    <p>Cuando envío la información a través del método GET. El formulario automáticamente arma la URL para enviar la información. A esa URL se llama (Query String)</p>
+
+    <!-- http://url-servidor.com/?variable-nombre-Valor-guardado&variable-apellido-Valor-guardado -->
+    <p>Ejemplo: www.servidor(backend).net/?nombredevalor1=valor1&nombredevalor2=valor2</p>
+
+
+    <h2>Atributos INPUT</h2>
+    <ul>
+        <li>type</li>
+        <li>name</li>
+        <li>placeholder</li>
+    </ul>
+
+
+    <h2>Rellenar formulario</h2>
+
+    <form action="www.servidor(backend).net" method="GET"> 
+        <label for="">Ingrese la palabra a buscar:</label> <!--label me permite reforzar la info.-->
+        <input type="text" name="busqueda" placeholder="Ingrese caracteres"><br>
+        <input type="text" name="nombre" placeholder="Ingrese nombre"><br>
+        <input type="text" name="apellido" placeholder="Ingrese apellido"><br>
+
+        <button type="submit">Buscar</button>
+
+    </form>
+
+    <h2>Buscar en distintos browsers</h2>
+    <!-- Google al buscar manzana -->
+    <!-- https://www.google.com/search?q=manzana&-->
+
+    <form action="https://www.google.com/search" method="GET" target="_blank"> 
+        <label for="">Ingrese la palabra a buscar:</label> <!--label me permite reforzar la info.-->
+        <input type="text" name="q" placeholder="Ingrese caracteres">
+        <button type="submit">Buscar en Google</button>
+    </form>
+    <!-- Google al buscar manzana -->
+    <!-- https://www.google.com/search?q=manzana&-->
+
+    <form action="https://ar.search.yahoo.com/search" method="GET" target="_blank"> 
+        <label for="">Ingrese la palabra a buscar:</label> <!--label me permite reforzar la info.-->
+        <input type="text" name="p" placeholder="Ingrese caracteres">
+        <button type="submit">Buscar en Yahoo</button>
+    </form>
+
+    <form action="https://www.bing.com/search" method="GET" target="_blank"> 
+        <label for="">Ingrese la palabra a buscar:</label> <!--label me permite reforzar la info.-->
+        <input type="text" name="q" placeholder="Ingrese caracteres">
+        <button type="submit">Buscar en Bing</button>
+    </form>
+
+    <form action="https://duckduckgo.com/" method="GET" target="_blank"> 
+        <label for="">Ingrese la palabra a buscar:</label> <!--label me permite reforzar la info.-->
+        <input type="text" name="" placeholder="Ingrese caracteres">
+        <button type="submit">Buscar en DuckDuckGo</button>
+    </form>
+
+        <!-- Tambien se puede sin el index.php -->
+    <form action="https://es.wikipedia.org/w/index.php" method="GET" target="_blank"> 
+        <label for="">Ingrese la palabra a buscar:</label> <!--label me permite reforzar la info.-->
+        <input type="text" name="search" placeholder="Ingrese caracteres">
+        <button type="submit">Buscar en Wikipedia</button>
+    </form>
+
+    
+    
+
+</body>
+</html>

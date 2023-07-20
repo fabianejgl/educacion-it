@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+:root{
+    --color-primario: #ffc333;
+    --color-secundario: #eee;
+    --color-terciario: #0c0809;
+}
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #131313;
+}
+
+/*Header*/
+header {
+    /* Pueod usar background-colo o border para  delimitar el espacio que estoy usando*/
+    /* background-color: red; */
+    border: 1px solid red;
+    background-color: var(--color-primario);
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: center 0;
+}
+
+.top-container {
+    width: 1024px;
+    margin: auto;
+    height: 104px;
+    display: flex;
+    justify-content: space-between; /*separo entre sí los elems*/
+    align-items: center; /*se centra verticalmente, sino está pegado al techo*/
+}
+
+    #logo {
+        font-size: 24px;
+        color: var(--color-primario); /*esto hace que las img que son como figuritas se rellenen*/
+    }
+
+        #logo span {
+            color:var(--color-secundario); /*modifico el "Ya" en el logo, que está en un span*/
+        }
+
+.top-container nav a { /*Selecciona los a DENTRO DE nav que está DENTRO de .top-container*/
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-secundario);
+    padding: 12px;
+    font-weight: 400;
+    transition: 300ms;
+}
+
+.top-container nav a:hover {
+    color: var(--color-primario);
+    text-decoration: underline;
+}
+
+/*Ahora al contenido del header, lo del "pedi tu taxi" y la primera imagen*/
+.contenido-header {
+    width: 700px;
+    margin: 24px auto 0px auto;
+    text-align: center;
+}
+
+    .contenido-header h1{
+        color: var(--color-secundario);
+        font-size: 24px;        
+    }
+    
+        .contenido-header h1 span {
+            color: var(--color-primario);
+        }
+
+    .contenido-header a {
+        color: var(--color-primario);
+        font-size: 32px;
+        font-weight: 600;
+        display: inline-block; /*para que acepte MARGIN debe ser INLINE-BLOCK*/
+        margin: 12px 0 40px 0;
+    }
+
+
+
+.info {
+    width: 1024px;
+    margin: 64px auto 0 auto;
+    /* height: 488; */
+    display: flex;
+}
+
+    .info article {
+        /* text-align: justify; */
+        margin-left: 52px;
+        padding: 16px 0 0 24px;
+    }
+
+        .info article p {
+            text-align: justify;
+        }
+
+        .info article p {
+            margin-bottom: 24px;
+        }
+
+        .info article div{
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            margin-top: 32px;
+            padding-left: calc(48px + 24px);
+        }
+
+        .info article div:nth-child(odd) {
+            background-image: url('../img/handshake.png');
+        }
+        .info article div:nth-child(even) {
+            background-image: url('../img/handshake.png');
+        }
+
+            .info article div h3 {
+                margin-bottom: 8px;
+            }
+
+
+            
+/*Servicios*/
+.servicios {
+    padding-top: 40px;
+    /* height: 400px; */
+    margin-top: 64px;
+    background-color: var(--color-terciario);
+}
+
+    .servicios div {
+        width: 1024px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap; /*CLAVE, POR DEFECTO ES NO-WRAP, hace que TODOS entren, y con wrpa lo tira hacia abajo*/
+        justify-content: space-between;
+        color: var(--color-secundario);
+        text-align: center;
+    }
+        .servicios h2 { /*si pusiese ,servicios div h2 sería lo mismo*/
+            color: var(--color-primario);
+            width: 100%;
+        }
+
+        .servicios article {
+            width: 162px;
+            margin: 40px;
+        }
+
+        .servicios article h3 {
+            color: var(--color-secundario);
+        }
+
+        .servicios article img {
+            background-color: var(--color-secundario);            /*FONDO DE IMG, NECESITAN color DEL FoNDO*/
+            border-radius: 40%;
+        }
+
+

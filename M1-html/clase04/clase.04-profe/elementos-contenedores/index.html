@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 04 - Elementos contenedores (Etiquetas contenedoras)</title>
+</head>
+
+<body>
+    <h1>Elementos contenedores (Etiquetas contenedoras)</h1>
+
+    <!-- La etiquetas (elementos) contenedores se utilizan para estructurar y organizar el contenido de nuestro página web. Estás etiquetas se utilizan para crear bloques o secciones dentro del documento HTML. -->
+
+    <!-- Antes del surgimiento del html5 -->
+    <!-- div -->
+
+    <div id="header">
+        <h1>Criptomonedas</h1>
+        <p>Página sobre las criptomonedas...</p>
+    </div>
+
+    <div id="main">
+        <h2>Lista de criptomonedas</h2>
+
+        <ul>
+            <li>Bitcoin</li>
+            <li>Litcoin</li>
+            <li>Bitoin cash</li>
+            <li>Ethereum</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p>Todos los derechos reservados 2023</p>
+    </div>
+
+    <!-- después del html5 (etiquetas semanticas contenedoras) -->
+    <!-- header, main, section, article, footer, nav, aside  -->
+
+    <header>
+        <h1>Criptomonedas</h1>
+        <p>Página sobre las criptomonedas...</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lista de criptomonedas</h2>
+
+            <ul>
+                <li>Bitcoin</li>
+                <li>Litcoin</li>
+                <li>Bitoin cash</li>
+                <li>Ethereum</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Post más visitados</h2>
+
+            <article>
+                <h3>El título del post 1</h3>
+                <p>El contenido del post</p>
+            </article>
+
+            <article>
+                <h3>El título del post 1</h3>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>Descripción de la imagen</figcaption>
+                </figure>
+
+                <p>El contenido del post</p>
+            </article>
+
+            <article>
+                <h3>El título del post 1</h3>
+                <p>El contenido del post</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados 2023</p>
+    </footer>
+
+</body>
+
+</html>

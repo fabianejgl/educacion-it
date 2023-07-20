@@ -1,0 +1,58 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap');
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+
+h1 {
+    background: black;
+}
+
+h2 {
+    background: black;
+}
+
+/* Media Queries (me van a permitir modificar la interfaz web basado en el dispositivo o tamaño del viewport del dispositivo)*/
+
+@media print {
+    /* body {
+        color: black;
+    } */
+    h1, h2 {
+        background: transparent,none;
+    }
+}
+
+/* media queries: Para los diferentes dispositivos de pantalla */
+
+/* 
+Media queries para diferentes dispositivos (punto de quiebre) Breakpoints
+
+!Sitio responsivo económico
+disp pequeños   <576px(mobile)
+disp largos     <1200px(desktop)
+
+!Sitio responsivo mínimo (3 media queries)
+disp
+disp
+disp
+
+!Sitio responsivo optimo (5 media queries)
+disp pequeños   <576 (mobile)
+disp medianos   >7 (tablet)
+disp
+
+*/

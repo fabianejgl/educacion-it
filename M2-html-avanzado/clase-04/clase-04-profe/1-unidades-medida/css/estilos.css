@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 35px;
+}
+
+/* body {
+    font-size: 20px;
+} */
+
+/* ! EM (em) element */
+/* ? EM es relativa a su <etiqueta>, <contenedora>, <body> y <html>. A la altura de la M mayuscula.
+ */
+
+article.opinion {
+    font-size: 2em; /* ! papá directo body => body => 16px => 2em => 16x2 => 32px */
+    padding: 1em; /* ! .opinion (font-size) => 32px => 1em => 32x1 => 32px */
+    margin: .5em 1em 2em 3em; /* 40*0.5 => 16px | 32*1 => 32px | 32*2 => 64px | 32*3 => 96px */
+    box-shadow: 1em 1em 3em black; /* 32px 32px 96px */
+}
+
+
+
+
+/* ! REM (em) root element */
+/* ? REM es relativa a la etiqueta root <html> */
+
+h2.titulo {
+    font-size: 1rem; /* html => por defecto | 20px => 20px*1=> 20px */
+    margin: 3rem; /* html => por defecto 16px | 20px => 20px*3 => 60px */
+}
+
+p.parrafo {
+    font-size: 1.25rem; /* [font-size]html => 20px => 20px*1.25 => font-size: 25px */
+}
+/* Mobile first => min-width */
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+/* porcentaje y viewport */
+
+/* porcentaje. Esta vinculado al elemento padre */
+/* .papa esta mirando el ancho del body  */
+
+/* .papa { 
+    background-color: crimson;
+    width: 1000px; 
+    height: 500px;
+}
+ */
+/* .hijo el ancho del .papa */
+
+/* .hijo { 
+    background-color: blueviolet;
+    width: 80%; */ /* .papa => 1000px => 800px
+    height: 50%;  *//* 250px
+} */
+
+/* viewport (rem) */
+
+.papa {
+    background-color: crimson;
+    width: 100vw; /* 1000px */
+    height: 100vh;
+}
+.hijo {
+    background-color: blueviolet;
+    width: 50vw; /* 500px */
+    height: 50vh;
+}

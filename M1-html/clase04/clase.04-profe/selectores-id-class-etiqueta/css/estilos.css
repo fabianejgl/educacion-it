@@ -1,0 +1,48 @@
+/* Cuando quiero seleccionar en la hoja de estilos un ID, tengo que colocar un numeral (#) delante del identificador */
+
+#titulo-piola {
+    color: red;
+}
+
+#parrafo-bonito {
+    color: #676701;
+}
+
+/* Cuando quiero selecionar en la hoja de estilos una CLASS, tengo que colocar un punto (.) delante del indentificador */
+
+
+.color-azul {
+    color: blue;
+}
+
+.color-verde {
+    color: green;
+}
+
+.color-rojo {
+    color: crimson;
+}
+
+.texto-grande {
+    font-size: 50px;
+}
+
+.texto-mediano {
+    font-size: 30px;
+}
+
+.texto-pequenio {
+    font-size: 10px;
+}
+
+.fondo-negro {
+    background-color: black;
+}
+
+.fondo-verde {
+    background-color: green;
+}
+
+.fondo-naranja {
+    background-color: orange;
+}

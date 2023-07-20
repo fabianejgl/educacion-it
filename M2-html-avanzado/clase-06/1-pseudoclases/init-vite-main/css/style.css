@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+/* Variables css */
+:root { /*Selector raiz*/
+    /* Variables globales */
+    --fondo: #FFF6F4;
+    --fondo-SECUNDARIO: #F86F03;
+    --disposicion: flex;
+    --tipografia: 'Poppins',sans-serif;
+
+}
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex; */
+    display: var(--disposicion);
+
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.contenedor {
+    --fondo: #FFF6F4; /*VARIABLE LOCAL*/
+    width: 700px;
+    padding: 25PX;
+    background-color: var(--fondo);
+}
+
+.grupo {
+    background-color: var(--fondo-SECUNDARIO);
+    margin: 20px;
+}
+
+/* ! pseudoclase: first-child */
+.parrafos p:first-child{ /*Dentro de la clase .parrafo -> de los p, agarro el primer hijo*/
+    color: forestgreen;
+    background-color: black;
+}
+
+/* ! pseudoclase: last-child */
+.parrafos p:last-child{ /*Dentro de la clase .parrafo -> de los p, agarro el primer hijo*/
+    color: blueviolet;
+    background-color: black;
+}
+
+
+
+/* ! pseudoclase: first-of-type */
+.elementos p:first-of-type{ /*Dentro del padre, buscar primero de los p*/
+    color: crimson;
+    background-color: black;
+}
+
+/* ! pseudoclase: last-of-type */
+.elementos div:last-of-type{ /*Dentro del padre, buscar primero de los p*/
+    color: white;
+    background-color: crimson;
+}
+
+
+
+/* ! nth-child*/
+.lista li:nth-child(3) { /*Pinta el 3°*/
+    background-color: salmon;
+}
+
+.lista li:nth-child(2n) { /*Pinta los pares o "even"*/
+    background-color: crimson;
+}
+.lista li:nth-child(2n+1) { /*Pinta los impares o "even"*/
+    background-color: sienna;
+}
+
+/* ! nth-last-child*/
+.lista li:nth-last-child(4n) {
+    background-color: black;
+    color: white;
+}
+
+
+/* ! nth-of-type() */
+.lista-b p:nth-of-type(3) {
+    background-color: rebeccapurple;
+}
+/* ! nth-last-of-type() */
+.lista-b p:nth-last-of-type(3) {
+    background-color: forestgreen;
+}
+
+/* ? EJEMPLO DEMO (me pisa los estilos de arriba de .LISTA-B)*/
+.lista-b p:nth-of-type(1),
+.lista-b span:nth-of-type(1),
+.lista-b div:nth-last-of-type(1) {
+    background-color: black;
+    color: orange;
+}

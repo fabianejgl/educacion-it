@@ -1,0 +1,61 @@
+/* Limpio estilos por defecto */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body { /*! CONTENEDOR PADREEEE*/
+    display: flex;            /*!Flexbox*/
+    background-color: red;
+    flex-direction: column;     /*Esto me ordena header-main-footer*/
+    align-items: center;        /*Todo lo que está dentro del body lo centra ()*/
+}
+
+header {
+    display: flex;            /*!Por defecto es ROW, entonces me pone el MAIN y el ASIDE uno al lado del otro*/
+    background-color: yellow;
+    width: 900px;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.contenedor-principal {
+    display: flex;
+    background-color: green;
+    width: 900px;
+}
+
+main {
+    background-color: purple;
+    /* width: 900px; */
+    flex-basis: 600px;
+    padding: 20px;
+}
+
+aside {
+    background-color: pink;
+    flex-basis: 300px;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: violet;
+    width: 900px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}

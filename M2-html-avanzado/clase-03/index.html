@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Clase 03 - Responsive Web Design</title>
+</head>
+<body>
+    <h1>Responsive Web Design</h1>
+
+    
+    <ul>
+        <li>Desktop First</li>
+        <li>Mobile First</li>
+    </ul>
+    
+    <img src="https://academy.pagefly.io/wp-content/uploads/2022/06/image2-3.png" alt="foto responsive">
+
+
+    <h2>Mobile First</h2>
+
+    <ul>
+        <li>
+            <h3>Fuild Design</h3>
+            <p>Utiliza porcentajes para definidir el tamaño de los elementos permitiendo que estos se adapten a su contenedor, pero en pantallas grandes los mismos se estiraban demasiado
+                <br>
+            También existe una variante llamada <strong>Liquid Design</strong> que establece el uso de máximos y mínimos, pero esto genera espacios demasiado grandes entre elementos            
+            </p>
+        </li>
+        <li>
+            <h3>Adaptive Design</h3>
+            <p>Consiste en diseñar una página para cada tipo de dispositivo en el que se visualice el sitio, pero en este caso los contenidos se repiten y son independientes uno del otro
+                <br>
+                Esta propuesta es ideal para clientes con bajo presupuesto ya que generalmente se utilizan 2 versiones del sitio principal (desktop) y se utilizan herramientas para el redireccionamiento
+            </p>
+        </li>
+        <li>
+            <h3>Responsive Design</h3>
+            <p>Diseño utilizando multimedia flexible, un sistema de grillas adaptable e implementa el concepto <em>one web for all</em> para evitar la duplicidad de contenido.
+                <br>
+                Este tipo de diseño debe ser planificado desde la vista mobiley de ser posible utilizando los contenidos finales para lograr un mejor resultado.
+            </p>
+        </li>
+    </ul>
+
+    <h2>Temas a tener en cuenta para hacer un sitio responsive</h2>
+
+    <h3>Diseño flexible</h3>
+
+    <h3>Diseño basado en rejillas</h3>
+
+    <h3>Diseño de las imágenes</h3>
+
+    <h3>Medias Queries(CSS) (imágenes adaptables)</h3>
+
+    <h2>Etiqueta Viewport</h2>
+
+    <a href="">MDN Meta Tag</a>
+
+    <ul>
+        <li>initial-scale: Establece el zoom inicial a la página normalmente en 1</li>
+        <li>minimum-scale y maximum-scale: Establece nivel mínimo y máximo de zoom (1a 10)</li>
+        <li>user-scalable: Define si el usuario podrá o no hacer zoom sobre la página (1,0,no,yes)</li>
+    </ul>
+
+    <a href="https://whatismyviewport.com/">¿Cuál es mi tamaño viewport?</a>
+
+    <h2>Tipos de medidas</h2>
+    <ul>
+        <li>
+            <h3>Unidades Absolutad</h3>
+            <p>Son aquellas cuyo valor es independiente al medio en el que se reproduce, es decir que siempre mide lo mismo. Se utilizan normalmente para establecer límites a los tamaños de cajas y de esta manera evitar tamaños demasiado grandes o chicos.</p>
+            <ul>
+                <li>
+                    <h4>Distancias:</h4>
+                    <ul>100 mm</ul>
+                    <ul>10 mm</ul>
+                    <ul>2 in (pulgadas)</ul>
+                </li>
+                <li>
+                    <h4>Tipográficas:</h4>
+                    <ul>1 pc (1/6 in )</ul>
+                    <ul>1 pt (1/72 in)</ul>
+                    <ul>2 in (pulgadas)</ul>
+                </li>
+                <li>
+                    <h4>Hídridas:</h4>
+                    <ul>1 px (1/96 in)</ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Unidades Relativas</h3>
+            <p>Son aquellas que dependen de otro elemento para establecer su tamaño y por lo tanto no siempre miden lo mismo. Se utilizan principalmente para definir los tamaños de caja, así como también el tamaño de las tipografías utilizadas</p>
+            <ul>
+                <li>
+                    <h4>Tamaño:</h4>
+                    <ul><strong>Porcentaje (%) (ancho del contenedor)</strong></ul>
+                </li>
+                <li>
+                    <h4>Tipografía:</h4>
+                    <ul>
+                        <li><strong>em (ancho de la M</strong>)</li>
+                        <li>ex (alto de la x)</li>
+                        <li>ch (tamaño del caracter 0)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Hídridas</h4>
+                    <ul>
+                        <li>rem (ancho de la M en el root)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Unidades Flexibles</h3>
+            <p>Son aquellas que basan su tamaño en las dimensiones de la ventana (viewport) donde se visualiza la página web. Se utilizan para implementar tipografías adaptables o definir las alturas de caja de algunos elementos</p>
+            <ul>
+                <li>Dimensión
+                    <ul>
+                        <li>vmin [viewport min] (lado menor)</li>
+                        <li>vmax [viewpor max] (lado mayor)</li>
+                    </ul>
+                </li>
+                <li>
+                    Disposicion
+                    <ul>
+                        <li>ss</li>
+                        <li>ss</li>
+                        <li>ss</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

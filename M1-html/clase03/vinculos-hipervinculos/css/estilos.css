@@ -1,0 +1,42 @@
+body {
+    background-color: #ddd;   
+}
+
+a {
+    color: rgb(27, 65, 19);
+}
+
+/* Pseudoclases pertenecientes a los links */
+/* Las pseudoclases se le agregan a continuación del elem seleccionado */
+
+/* 
+1. :link
+2. :visited
+3. :hover
+4. :active
+ */
+
+/*! Arquitectura de las pseudoclases */
+/* elemento:pseudoclase {}*/
+a:link {
+    text-decoration: underline;
+}
+
+a:visited{
+    background-color: black; /*No lo modifica*/
+}
+
+a:hover {
+    color:blue;
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+a:active {  /*al presionarlo*/
+    color: violet;
+    background-color: red;
+}
+
+a:focus{    /*Al tabular está con ese color*/
+    background-color: yellowgreen;
+}

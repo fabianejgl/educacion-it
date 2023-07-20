@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Clase 03 - Imagenes</title>
+</head>
+<body>
+
+    <!-- 
+        !PIXEL
+        Un pixel  es la unidad minima homogénea en colo rque forma parte de una imagen digital
+     -->
+
+     <!-- 
+        ! Imágenes rasterizadas. 
+        Imagen Bitmap. Son imagenes formadas por una cuadrícula de pixeles, donde cada pixel tiene un valor de color. Formato de archivos (png, jpg, gif, jpeg, webp)
+      -->
+
+      <!-- 
+        ! Imágenes vectoriales.
+        Están compuesta por elementos geometricos definidos matematicamente. Las líneas, curvas y formas. Este tipo de imagenes son escalables sin pérdida de calidad. 
+          * NO SE PIXELAN. Forma de archivo. (svg) (ai -> illustrator y el cdr -> Corel)
+      -->
+
+      <!-- ! Formato Rasterizado -->
+
+      <!-- 
+        !JPG
+        Es un forma de imagen más utilizado en WEB. No permite transperencias (No tiene canal alpha, q es el q permite la transparencia). Formato destructivo.
+            ! Le saca información reduciendo el tamaño.
+
+        !PNG
+        Es un formato muy común. Bitmap (rasterizadas). ADMITE TRANSPARENCIA.
+          *Tiene canal alpha. Formato destructivo, el algoritmo no es tan agresivo como el jpg.
+        Tengo 2 imágenes, por eso ocupa más espacio. Tengo la original, y el recorte. Una arriba de la otra.
+
+        !GIF
+        Es un formato de imagen muy común. Bitmap. ADMITE TRANSFERIA. Y también puede contener animaciones.
+
+        !WEBP: (Google)
+        Todo lo mejor de los formatos anteriores (jpg, png, gif) Permite animaciones, permite transparencia. Es formato destructivo. Muchisimo mejor que el jpg. Logra archivos de menor peso que el jpg. Ocupa menos en disco.
+        
+        
+       -->
+
+       <!-- !RESOLUCIÓN DE LA IMAGEN -->
+
+       <!-- 
+            La resolución se refiere a la cantidad de detalle y calirdad que tiene la imagen, medida en pixeles. Determina cuánto pixeles se utilizan para representar una imagen en pantalla. Una resolución más alta implica una mayor cantidad de pixeles
+        -->
+
+        <!-- 640x480 SD (0.3 Mega Pixel) -->
+        <!-- 1920x1080 FULL HD (2.0 Mega Pixel) -->
+        <!-- 3840x2160 4K (8.0 Mega Pixel) -->
+
+
+    <!-- ! Para incorpar imagenes en mi documento html utilizo la etiqueta <img> -->
+
+    <!-- 
+        ! Atributos 
+        src: la ruta donde está la imagen
+        alt: texto descriptivo de la imagen.
+        width: Establece el ancho de la imagen en pixeles o porcentaje
+        heigth: Establece el alto de la imagen en pixeles o porcentaje
+        title: Agrega un texto de información emergente. Le agrega un tooltip (no se puede cambiar el estilo)
+        loading: Me permite cargar con retraso las imagenes que aún no se están viendo en el area del navegador. Valores "eager" (carga inmediato) o "lazy" (carga diferida) cuando la imagen se acerca al área visible de la página.
+     -->
+
+     <!-- https://unsplash.com/es -->
+     <!-- https://www.pexels.com/es-es/ -->
+     <!-- https://pixabay.com/es/ -->
+
+    <img src="img/galletitas.jpg" alt="Pila de galletitas">
+    <img src="img/sirena.jpg" alt="sirena">
+
+    <img src="img/libro-frente-compu.jpg" width="500px" alt="Libro frente a la compu">
+
+    <img id="img-responsive" src="img/libro-frente-compu.webp" alt="Libro frente a la compu">
+
+    <!-- !!OPTIMIZAR TANTO :
+      *-FORMATO DE ARCHIVO PARA GUARDAR LA IMG
+      *-RESOLUCION DE IMAGEN COMO
+    -->
+    
+</body>
+</html>

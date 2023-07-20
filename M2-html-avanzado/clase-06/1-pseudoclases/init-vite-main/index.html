@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primera aplicación VITE</title>
+  </head>
+  <body>
+    
+    <!-- .contenedor>.grupo>h2{:first-hchild / :laschild}+.parrafo>p*3 -->
+    <div class="contenedor">
+      <h1>PSEUDOCLASES</h1>
+      
+      <p>Son selectores en css que permiten aplicar estilos a elementos específicos en ciertos estados o condiciones. Las pseudoclases se añaden a los selectores css (.clase, #id, etiqueta) se le agrega la pseudoclase (clase:pseudoclase, #id:pseudoclase, etiqueta:pseudoclase)</p>
+      
+      <hr><hr>
+      
+      <div class="grupo">
+        <h2>:first-child / :laschild</h2>
+        <div class="parrafos">
+          <p>Soy el primer párrafo</p>
+          <p>Soy el segundo párrafo</p>
+          <p>Soy el tercer párrafo</p>
+        </div>
+      </div> <!--.grupo-->
+
+      <!-- .grupo>h2{:first-of-type / :last-of-type}+.elementos>div+p+span+div -->
+      <div class="grupo">
+        <h2>:first-of-type / :last-of-type</h2>
+        <div class="elementos">
+          <div>Hola soy un div</div>
+          <p>Soy el primer párrafo</p>
+          <span>Hola soy un span</span>
+          <p>Soy el segundo parrafo</p>
+          <div>Hola soy otro div</div>
+        </div>
+      </div>  <!--.grupo-->
+
+      <!-- .grupo>h2{:nth-child() / :nth-last-child()}+ul.lista>li*8{Soy la opción #$$} -->
+      <div class="grupo">
+        <h2>:nth-child() / :nth-last-child()</h2>
+        <ul class="lista">
+          <li>Soy la opción #01</li>
+          <li>Soy la opción #02</li>
+          <li>Soy la opción #03</li>
+          <li>Soy la opción #04</li>
+          <li>Soy la opción #05</li>
+          <li>Soy la opción #06</li>
+          <li>Soy la opción #07</li>
+          <li>Soy la opción #08</li>
+        </ul><!--.lista-->
+      </div><!--.grupo-->
+
+      <div class="grupo">
+        <h2>:nth-of-type() / :nth:kast-if type</h2>
+        <div class="lista-b">
+          <div>Hola soy el 1 <div></div></div>
+          <p>Hola soy el primer parrafo</p>
+          <p>Hola soy el segundo parrafo</p>
+          <span>Hola soy un span</span>
+          <p>Hola soy el 3 parrafo</p>
+          <div>Hola soy otro div</div>
+        </div> <!--lista-b-->
+      </div> <!--grupo-->
+
+    </div> <!--.contenedor-->
+    
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

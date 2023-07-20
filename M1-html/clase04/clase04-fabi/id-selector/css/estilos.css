@@ -1,0 +1,33 @@
+#titulo-piol {
+    color: blue;
+}
+
+#parrafo-bonito {
+    color: red;
+}
+
+.h2-selector-clase {
+    color: green;
+    font-size: 50px;
+    background-color: brown;
+}
+
+.color-azuul {
+
+}
+
+.color-verde{
+
+}
+
+.texto-grande{
+    font-size: 50px;
+}
+
+.texto-mediano{
+    font-size: 30px;
+}
+
+.texto-grande{
+    font-size: 15px;
+}

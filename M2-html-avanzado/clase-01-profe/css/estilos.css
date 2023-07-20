@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,500;1,100;1,500&family=Chakra+Petch:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+body {
+    font-family: 'Chakra Petch', 'Arial', sans-serif;
+}
+
+h1 {
+    font-weight: 700; /* 300 | 700 */
+    font-style: italic;
+    text-transform: uppercase; /* mayusculas */
+    text-decoration: line-through; /* tachado */
+}
+
+h2 {
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize; /* primera letra de la palabra mayuscula */
+    text-decoration: underline; /* subrayado */
+}
+
+.font-archivo {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.font-chakra {
+    /* font-family: 'Chakra Petch', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px; 
+    line-height: 3; */
+    /* shorthand */
+    font: italic 700 25px/3 'Chakra Petch', 'Arial', sans-serif;
+}
+
+
+
+
+

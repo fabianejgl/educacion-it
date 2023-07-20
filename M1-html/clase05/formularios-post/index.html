@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Clase 05 - Forms (Método POST)</title>
+</head>
+<body>
+    <h1>Formularios - POST</h1>
+
+    <!-- Action: url del servidor a donde se va enviar la INFO -->
+    <!-- Si no pongo target, es _SELF por DEFECTO -->
+    <!-- Si no pongo method, es GET por DEFECTO -->
+
+    <!-- autocomplete: on/off   -> avtiva la sugerencia -->
+
+    <form action="" method="post">
+        <label for="nombre" >Nombre: </label>
+        <input type="text" name="nombre" autocomplete="off" required>
+
+        <label for="apellifo" >Apellido: </label>
+        <input type="text" name="apellido" required>
+
+        <label for="email">Correo: </label>
+        <input type="email" name="email" required>
+
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" required>
+
+        <label for="encriptado">Dato encriptado: </label>
+        <input type="password" name="encriptado" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!--  -->
+    <!-- Query String: ?nombre=Fabian&apellido=Gomez&email=fabian-gl2011%40hotmail.com&edad=2 -->
+</body>
+</html>

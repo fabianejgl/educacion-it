@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+}
+
+.contenedor {
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+    border: 5px solid gold;
+
+}
+
+.caja {
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.static {
+    background-color: purple;
+}
+.relative {
+    background-color: greenyellow;
+}
+.absolute {
+    background-color: gold;
+}
+.fixed {
+    background-color: pink;
+}

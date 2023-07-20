@@ -1,0 +1,19 @@
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20 px;
+}
+
+.contenedor {
+    margin: 1em;
+    background-color: #FFEADD;
+    display: grid;
+    /*  */
+    
+}

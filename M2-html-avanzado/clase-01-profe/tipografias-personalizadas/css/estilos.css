@@ -1,0 +1,60 @@
+/* 
+woff2 = formato woff2 (Poco Compatible)
+woff = formato woff (Compatible)
+ttf = formato truetype (Muy compatible)
+otf = formato opentype (Muy compatible)
+eot = formato embedded-opentype (Compatible)
+*/
+
+@font-face {
+    font-family: 'Kenyan Coffee';
+    font-style: normal;
+    font-weight: 300;
+    src:
+        local('Kenyan Coffee'),
+        url('../fonts/kenyan-coffee-rg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee';
+    font-style: italic;
+    font-weight: 300;
+    src:
+        local('Kenyan Coffee'),
+        url('../fonts/kenyan-coffee-rg-it.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee';
+    font-style: normal;
+    font-weight: 500;
+    src:
+        local('Kenyan Coffee'),
+        url('../fonts/kenyan-coffee-bd.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Kenyan Coffee';
+    font-style: italic;
+    font-weight: 500;
+    src:
+        local('Kenyan Coffee'),
+        url('../fonts/kenyan-coffee-bd-it.otf') format('opentype');
+}
+
+h1 {
+    font-family: 'Kenyan Coffee', sans-serif;
+    font-style: normal;
+    font-weight: 300; /* 300 | 500 */
+}
+
+h2 {
+    font-family: 'Kenyan Coffee', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+h3 {
+    /* Tipografías seguras de internet */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
