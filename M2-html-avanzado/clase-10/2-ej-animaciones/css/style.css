@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6c6c6c;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+p {
+    margin: 32px;
+}
+
+.relleno {
+    font-size: 1.75em;
+    font-weight: 600;
+    color: #5C5995;
+}
+
+.primero, .segundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.segundo {
+    /* display: flex; */
+    flex-direction: row; /*Uno al lado del otro en el section 2*/
+}
+
+.segundo div {
+    width: 512px;
+}
+
+#webdev {
+    opacity: 0;
+    color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*centra en ancho*/
+
+    /* animation-name: left-to-right;
+    animation-duration: 2s; */
+}
+
+#webdev2 {
+    opacity: 0;
+    color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*centra en ancho*/
+
+    /* animation-name: left-to-right;
+    animation-duration: 2s; */
+}
+
+#webdev h1, #webdev2 h1 {
+    width: 380px;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+#guy {
+    opacity: 0;
+    /* animation-name: right-to-left;
+    animation-duration: 2.5s; */
+}
+
+#guy2 {
+    opacity: 0;
+    /* animation-name: right-to-left;
+    animation-duration: 2.5s; */
+}
+
+@keyframes left-to-right {
+    from {
+        opacity: 0.1;
+        transform: translateX(-512px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        opacity: 0.1;
+        transform: translateX(512px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

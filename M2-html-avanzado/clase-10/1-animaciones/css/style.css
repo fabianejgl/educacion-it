@@ -1,0 +1,97 @@
+* {
+    /* Reset browser styles */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.spiderman {
+    width: 200px;
+    margin: 0 auto;
+    display: block; /*! IMG por defecto son INLINE-BLOCK, debo cambiarlo  a block para que el margin me lo centre*/
+    
+    /*SHORTHAND*/
+    animation: animar 5s infinite;
+    animation: animar2 5s infinite;
+    animation: animar3 5s infinite;
+    /* animation: [name] [duration] [tfunc] [delay] [itercount] [direction] <<---- shorthand */
+
+    animation-name: animar3;            /*Identificador de la animación*/
+    animation-duration: 5s;             /*Duración*/
+    animation-timing-function: linear;  /* ease */
+    animation-delay: 2s;
+    animation-iteration-count: 1;       /*default -> 1*/
+    animation-direction: normal;        /*default -> normal, reverse -> invierte orden*/
+    animation-fill-mode: forwards;      /*forwards hace q quede fijo,backwards lo "reinicia"*/
+    animation-play-state: running;      /*default running*/
+}
+
+/*Combinandolo con paused hace que al estar por encima se haga la animacion y al sacar el mouse se pausa, no reinicia*/
+/* .spiderman:hover {
+    animation-play-state: running;
+} */
+
+@keyframes animar {
+    from {
+        background-color: green;
+        transform: rotate(0deg);
+    }
+
+    to {
+        background-color: red;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes animar2 {
+    0% {
+        background-color: green;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: red;
+        transform: rotate(10deg);
+    }
+
+    50% {
+        background-color: blue;
+        transform: rotate(-10deg);
+    }
+    
+    75% {
+        background-color: red;
+        transform: rotate(10deg);
+    }
+
+    100% {
+        background-color: green;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animar3 {
+    0% {
+        background-color: steelblue;
+        transform: rotate(5deg);
+    }
+
+    50% {
+        background-color: blue;
+        transform: rotate(-5deg);
+    }  
+
+
+    100% {
+        background-color: lightblue;
+        transform: rotate(5deg);
+    }
+}

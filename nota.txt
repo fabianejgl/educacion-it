@@ -1,0 +1,4 @@
+Rever:
+	-Html: check.
+	-Maquetación: clase 4, 5 y 9.
+	
